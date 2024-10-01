@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Josh</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
     
 </head>
 <body>
-    
+    <!-- github: quielLovesLasagna -->
     <header>
         <div class="navbar">
             <h1 class="logo">Portfolio</h1>
@@ -113,7 +112,7 @@
                 </div>
                 <div class="awards-text">
                     <h3>NATIONAL CERTIFICATE II <br>in <br>COMPUTER SYSTEM SERVIVING</h3>
-                    <p> I successfully passed the Computer Systems Servicing NCII Assessment held at Southern Mindanao Computer College on May 23, 2024. This accomplishment reflects my dedication and proficiency in the field, equipping me with the essential skills and knowledge needed to excel in computer systems servicing.
+                    <p> I was awarded the "Outstanding Performance in Computer System Servicing" medal from Federico Yap National High School. This honor recognizes my dedication and skills in the Computer System Servicing strand, highlighting my commitment to excellence in the field.
                     </p>
                 </div>
             </div>
@@ -122,11 +121,13 @@
     
 
         <section id="contact">
-            <div class="contact-container">
-                <h2>CONTACT ME</h2>
-                <a href="https://web.facebook.com/joshhakkem.allawan" target="_blank" class="contact-button">Facebook</a>
-                <a href="https://t.me/Joshie31/" target="_blank" class="contact-button">Telegram</a>
-                <a href="mailto:joshhakkemallawan1@gmail.com" class="contact-button">Gmail</a>
+            <div class="container">
+                <h2>Contact Information</h2>
+                <div class="conts">
+                    <ul><B>Gmail:<br></B> <button><a href="joshhakkemallawan1@gmail.com">joshhakkemallawan1@gmail.com</a></button></ul>
+                    <ul><b>Facebook <br></b><button><a href="facebook.com/" target="_blank">fallow</a></button></ul>
+                    <ul><b>Telegram <br></b> <button><a href="tele ni bai">Telegram</a></button></ul>    
+                </div>
             </div>
         </section>
     </main>
@@ -137,7 +138,16 @@
         </div>
     </footer>
 
-   
+    <script>
+        // Smooth scroll functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 </body>
 </html>
