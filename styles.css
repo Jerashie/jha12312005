@@ -347,6 +347,7 @@ footer {
 }
 
 .contact-container-unique {
+    transition: 0.3s;
     width: 80%;
     margin: 50px auto;
     border: 1px solid #ddd;
