@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Josh</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     
 </head>
 <body>
@@ -121,12 +122,33 @@
     
 
         <section id="contact">
-            <div class="container">
-                <h2>Contact Information</h2>
-                <div class="conts">
-                    <ul><B>Gmail:<br></B> <button><a href="joshhakkemallawan1@gmail.com">joshhakkemallawan1@gmail.com</a></button></ul>
-                    <ul><b>Facebook <br></b><button><a href="facebook.com/" target="_blank">fallow</a></button></ul>
-                    <ul><b>Telegram <br></b> <button><a href="tele ni bai">Telegram</a></button></ul>    
+            
+            <div class="contact-container-unique">
+                <h2>Contacts</h2>
+                <div class="contact-item-unique">
+                    <span class="icon-phone-unique">📞</span>
+                    <span class="contact-info-unique">Phone: +9946937855</span>
+                    <button class="contact-btn-unique" onclick="openContact('tel:+9946937855')">Call</button>
+                </div>
+                <div class="contact-item-unique">
+                    <span class="icon-email-unique">📧</span>
+                    <span class="contact-info-unique">Email: joshhakkemallawan1@gmail.com</span>
+                    <button class="contact-btn-unique" onclick="openContact('mailto:joshhakkemallawan1@gmail.com')">Email</button>
+                </div>
+                <div class="contact-item-unique">
+                    <span class="icon-facebook-unique">📘</span>
+                    <span class="contact-info-unique">Facebook: @Josh Hakkem Allawan</span>
+                    <button class="contact-btn-unique" onclick="openContact('https://facebook.com/joshhakkem.allawan')">Facebook</button>
+                </div>
+                <div class="contact-item-unique">
+                    <span class="icon-instagram-unique">📸</span>
+                    <span class="contact-info-unique">Instagram: @josh_alya1</span>
+                    <button class="contact-btn-unique" onclick="openContact('https://www.instagram.com/josh_alya1/')">Instagram</button>
+                </div>
+                <div class="contact-item-unique">
+                    <span class="icon-telegram-unique">✈️</span>
+                    <span class="contact-info-unique">Telegram: @Joshie31</span>
+                    <button class="contact-btn-unique" onclick="openContact('https://t.me/Joshie31/')">Telegram</button>
                 </div>
             </div>
         </section>
@@ -138,16 +160,7 @@
         </div>
     </footer>
 
-    <script>
-        // Smooth scroll functionality
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+   
+    <script src="script.js"></script>
 </body>
 </html>
